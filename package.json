@@ -1,0 +1,21 @@
+{
+  "name": "pubg-battlegrounds-scroll-experience",
+  "version": "1.0.0",
+  "description": "PUBG Battlegrounds interactive 60FPS cinematic scroll experience and Fragzeb Arena Championship portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "pubg",
+    "battlegrounds",
+    "scrollytelling",
+    "scroll-animation",
+    "canvas",
+    "fragzeb-arena",
+    "esports"
+  ],
+  "author": "koshith2007-creator",
+  "license": "MIT"
+}

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PUBG BATTLEGROUNDS & FRAGZEB ARENA — Championship Experience</title>
+  <meta name="description" content="Cinematic 60FPS scroll animation and official FRAGZEB ARENA Battle Royale Championship Series portal."/>
+  
+  <!-- Typography for PUBG Scroll Experience & Fragzeb Arena -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS & Custom Theme Config for Arena Section -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#7f7667", "surface-tint": "#775a19", "background": "#fff8f4", "surface": "#fff8f4", "primary-fixed": "#ffdea5", "tertiary-container": "#a3a6a1", "inverse-surface": "#33302c", "on-tertiary-container": "#383c38", "inverse-on-surface": "#f7efea", "on-surface-variant": "#4e4639", "on-secondary-fixed": "#171e0f", "on-tertiary-fixed-variant": "#444843", "surface-variant": "#e9e1dc", "on-tertiary-fixed": "#191c19", "primary": "#775a19", "surface-container-highest": "#e9e1dc", "on-secondary": "#ffffff", "on-background": "#1e1b18", "error-container": "#ffdad6", "tertiary": "#5c5f5b", "inverse-primary": "#e9c176", "on-primary-container": "#4e3700", "on-tertiary": "#ffffff", "surface-dim": "#e0d9d3", "error": "#ba1a1a", "tertiary-fixed-dim": "#c5c7c1", "secondary-container": "#dde6ce", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "secondary": "#59614e", "on-surface": "#1e1b18", "surface-container-high": "#eee7e1", "on-secondary-fixed-variant": "#414938", "on-primary-fixed-variant": "#5d4201", "surface-container": "#f4ece7", "on-primary-fixed": "#261900", "on-secondary-container": "#5f6754", "outline-variant": "#d1c5b4", "on-primary": "#ffffff", "primary-fixed-dim": "#e9c176", "surface-bright": "#fff8f4", "tertiary-fixed": "#e1e3dd", "on-error": "#ffffff", "secondary-fixed": "#dde6ce", "surface-container-low": "#faf2ed", "secondary-fixed-dim": "#c1cab3", "primary-container": "#c5a059" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "3rem", "gutter-desktop": "2rem", "margin": "1.25rem", "gutter": "1.5rem", "space-md": "1rem", "space-lg": "1.75rem", "margin-desktop": "3.5rem" }, "fontFamily": { "body-sm": ["Manrope"], "display-xl-mobile": ["Syne"], "headline-sm": ["Syne"], "headline-lg": ["Syne"], "body-lg": ["Manrope"], "headline-md": ["Syne"], "label-sm": ["Space Grotesk"], "headline-lg-mobile": ["Syne"], "display-xl": ["Syne"], "label-lg": ["Space Grotesk"], "body-md": ["Manrope"], "label-md": ["Space Grotesk"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "display-xl-mobile": ["40px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }], "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-xl": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }] } } } };</script>
+
+  <!-- Scoped Stylesheet for PUBG Scroll Animation -->
+  <link rel="stylesheet" href="style.css?v=4"/>
+</head>
+<body class="loading-state bg-background font-body-md text-body-md text-on-surface antialiased">
+
+  <!-- =========================================================================
+       SECTION 1: PUBG CINEMATIC SCROLL ANIMATION (TOP SECTION)
+       ========================================================================= -->
+  <section id="pubg-scroll-experience" class="scroll-experience-section" aria-label="Cinematic Scroll Animation">
+    
+    <!-- Tactical HUD Ambient Overlays -->
+    <div class="hud-scanlines" aria-hidden="true"></div>
+    <div class="hud-vignette" aria-hidden="true"></div>
+    <div class="hud-grid" aria-hidden="true"></div>
+
+    <!-- Tactical Preloader Overlay -->
+    <div id="preloader" class="preloader-overlay">
+      <div class="preloader-modal">
+        <div class="preloader-badge">
+          <span class="badge-icon">▲</span>
+          <span class="badge-tag">TACTICAL INTEL SYSTEM</span>
+        </div>
+        <h1 class="preloader-title">PUBG BATTLEGROUNDS</h1>
+        <p class="preloader-subtitle">DOWNLOADING SATELLITE TELEMETRY // 300 FRAMES SEQUENCE</p>
+        
+        <div class="progress-container">
+          <div class="progress-bar-glow"></div>
+          <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+        
+        <div class="preloader-stats">
+          <span id="load-status-text">INITIALIZING ASSET BUFFER...</span>
+          <span id="load-percentage" class="stat-highlight">0%</span>
+        </div>
+
+        <div class="preloader-sys-logs">
+          <span class="log-item">SECURE_LINK: ESTABLISHED</span>
+          <span class="log-item">RESOLUTION: 1280x720 HD</span>
+          <span class="log-item" id="log-frames-count">FRAMES: 0 / 300</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Cockpit Viewport (Pins for the duration of the 300 frames) -->
+    <div class="scroll-sticky-wrapper" id="scroll-sticky-wrapper">
+      
+      <!-- High-DPI Canvas Viewport -->
+      <div class="canvas-viewport" id="canvas-viewport">
+        <canvas id="sequence-canvas"></canvas>
+        
+        <!-- Interactive Mouse Crosshair Tracker -->
+        <div class="crosshair-tracker" id="crosshair-tracker" aria-hidden="true">
+          <div class="reticle-circle"></div>
+          <div class="reticle-axis-x"></div>
+          <div class="reticle-axis-y"></div>
+          <div class="reticle-coord" id="reticle-coord">COORD [048, 192]</div>
+        </div>
+      </div>
+
+      <!-- Persistent Top HUD Header -->
+      <header class="hud-header" id="hud-header">
+        <div class="header-brand">
+          <div class="pubg-logo">
+            <span class="logo-box">PUBG</span>
+            <div class="logo-text">
+              <span class="title-primary">BATTLEGROUNDS</span>
+              <span class="title-secondary">CINEMATIC SCROLL MATRIX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Horizon & Azimuth Compass -->
+        <div class="compass-telemetry" id="compass-telemetry">
+          <div class="compass-tape">
+            <span class="compass-bearing">N 015°</span>
+            <span class="compass-mark">|</span>
+            <span class="compass-bearing highlight" id="compass-degree">180° S</span>
+            <span class="compass-mark">|</span>
+            <span class="compass-bearing">SW 225°</span>
+          </div>
+          <div class="compass-reticle"></div>
+        </div>
+
+        <!-- HUD Actions & Controls -->
+        <div class="header-actions">
+          <div class="hud-chip frame-counter-chip">
+            <span class="chip-label">FRAME</span>
+            <span class="chip-val" id="hud-current-frame">001</span>
+            <span class="chip-sub">/ 300</span>
+          </div>
+
+          <button id="btn-audio-toggle" class="hud-btn" title="Toggle Tactical Audio FX [M]">
+            <span class="btn-icon" id="audio-icon">🔇</span>
+            <span class="btn-text" id="audio-label">AUDIO FX: OFF</span>
+          </button>
+
+          <button id="btn-autoplay" class="hud-btn highlight-btn" title="Toggle Cinematic Auto-Tour [SPACE]">
+            <span class="btn-icon" id="autoplay-icon">▶</span>
+            <span class="btn-text" id="autoplay-label">AUTO TOUR</span>
+          </button>
+
+          <button id="btn-fullscreen" class="hud-btn icon-only" title="Toggle Fullscreen [F]">
+            <span class="btn-icon">⛶</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Side Chapter Navigation Dots -->
+      <aside class="chapter-nav" id="chapter-nav" aria-label="Chapter Navigation">
+        <div class="chapter-nav-line">
+          <div class="chapter-nav-fill" id="chapter-nav-fill"></div>
+        </div>
+        <button class="chapter-dot active" data-target="0" title="Act 1: Erangel Dawn">
+          <span class="dot-indicator">01</span>
+          <span class="dot-label">DAWN PATROL</span>
+        </button>
+        <button class="chapter-dot" data-target="0.30" title="Act 2: Quantum Shards">
+          <span class="dot-indicator">02</span>
+          <span class="dot-label">CHRONO MATRIX</span>
+        </button>
+        <button class="chapter-dot" data-target="0.65" title="Act 3: Zone Convergence">
+          <span class="dot-indicator">03</span>
+          <span class="dot-label">BLUE ZONE</span>
+        </button>
+        <button class="chapter-dot" data-target="0.95" title="Act 4: The Final Stand">
+          <span class="dot-indicator">04</span>
+          <span class="dot-label">AIRDROP VICTORY</span>
+        </button>
+      </aside>
+
+      <!-- Cinematic Scrollytelling Story Cards -->
+      <section class="story-overlays-container" id="story-overlays" aria-label="Mission Chronicles">
+        
+        <!-- Chapter 1 -->
+        <article class="story-card active" id="card-chapter-1" data-start="0.00" data-end="0.25">
+          <div class="card-glass-panel">
+            <div class="card-meta">
+              <span class="tag-status">TACTICAL INTEL // PHASE 01</span>
+              <span class="tag-time">DUSK 19:42 HRS</span>
+            </div>
+            <h2 class="card-title">ERANGEL DAWN PATROL</h2>
+            <p class="card-desc">
+              Standing atop the coastal vantage, fireworks detonate across the horizon. One hundred operatives drop onto the island; only one squad or survivor walks away. Inspect telemetry and chart your landing zone.
+            </p>
+            <div class="card-telemetry-grid">
+              <div class="telem-item">
+                <span class="telem-lbl">PRIMARY LOADOUT</span>
+                <span class="telem-val">BERYL M762 • COMP</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">PROTECTION</span>
+                <span class="telem-val">LV.3 SPETSNAZ HELM</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">SURVIVORS ALIVE</span>
+                <span class="telem-val highlight-val">100 / 100</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Chapter 2 -->
+        <article class="story-card" id="card-chapter-2" data-start="0.25" data-end="0.60">
+          <div class="card-glass-panel">
+            <div class="card-meta">
+              <span class="tag-status">TACTICAL INTEL // PHASE 02</span>
+              <span class="tag-time">TEMPORAL SHARDS</span>
+            </div>
+            <h2 class="card-title">MULTIDIMENSIONAL COMBAT</h2>
+            <p class="card-desc">
+              Holographic memory panes rotate in synchronized 3D space, capturing past firefights, tactical breaches, and urban skirmishes. Spatial awareness is the razor's edge between victory and elimination.
+            </p>
+            <div class="card-telemetry-grid">
+              <div class="telem-item">
+                <span class="telem-lbl">MATRIX STATE</span>
+                <span class="telem-val">3D HOLOGRAPH CUBE</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">ENCOUNTERS</span>
+                <span class="telem-val highlight-val">12 CONFIRMED FRAGS</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">THREAT INDEX</span>
+                <span class="telem-val alert-val">SEVERE CRITICAL</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Chapter 3 -->
+        <article class="story-card" id="card-chapter-3" data-start="0.60" data-end="0.82">
+          <div class="card-glass-panel">
+            <div class="card-meta">
+              <span class="tag-status">TACTICAL INTEL // PHASE 03</span>
+              <span class="tag-time">CIRCLE PHASE 6</span>
+            </div>
+            <h2 class="card-title">BLUE ZONE CONVERGENCE</h2>
+            <p class="card-desc">
+              Dense tactical smoke envelopes the ridge. The blue electric perimeter is closing rapidly down to the final hundred meters. Hold the ridge line, preserve ammunition, and listen for enemy footsteps.
+            </p>
+            <div class="card-telemetry-grid">
+              <div class="telem-item">
+                <span class="telem-lbl">ZONE RADIUS</span>
+                <span class="telem-val alert-val">120 METERS</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">SURVIVORS</span>
+                <span class="telem-val highlight-val">3 REMAINING</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">DANGER LEVEL</span>
+                <span class="telem-val alert-val">MAXIMUM LETHALITY</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Chapter 4 -->
+        <article class="story-card" id="card-chapter-4" data-start="0.82" data-end="1.00">
+          <div class="card-glass-panel">
+            <div class="card-meta">
+              <span class="tag-status">MISSION OUTCOME // PHASE 04</span>
+              <span class="tag-time">AIRDROP SECURED</span>
+            </div>
+            <h2 class="card-title chicken-dinner-title">WINNER WINNER CHICKEN DINNER</h2>
+            <p class="card-desc">
+              Crimson smoke flares high from the military airdrop crate. C-130 transports roar across the twilight sky. The last adversary falls — absolute supremacy belongs to the sole survivor.
+            </p>
+            <div class="card-telemetry-grid">
+              <div class="telem-item">
+                <span class="telem-lbl">FINAL RANK</span>
+                <span class="telem-val victory-val">#1 / 100 WINNER</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">TOTAL DAMAGE</span>
+                <span class="telem-val">2,410 HP</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-lbl">CRATE LOOT</span>
+                <span class="telem-val victory-val">AWM • GHILLIE SUIT</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Scroll Continue Tactical Prompt (Replaces removed scrubber bar) -->
+      <a href="#arena-site-root" class="scroll-continue-prompt" id="scroll-continue-prompt" title="Scroll down to Fragzeb Arena">
+        <span class="prompt-pulse"></span>
+        <span class="prompt-text">SCROLL TO ENTER FRAGZEB ARENA</span>
+        <span class="prompt-chevron">▼</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 2: FRAGZEB ARENA TOURNAMENT WEBSITE (BELOW SCROLL ANIMATION)
+       ========================================================================= -->
+  <div id="arena-site-root" class="fragzeb-arena-wrapper">
+    <!-- Fragzeb Arena Fixed Navbar (Reveals when entering this section) -->
+    <header id="fragzeb-header" class="fixed fragzeb-nav-dock top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(30,27,24,0.04)]"><div class="w-full h-20 px-margin md:px-gutter-desktop lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><span class="w-2.5 h-2.5 bg-primary rounded-DEFAULT"></span><span class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface group-hover:text-primary transition-colors">FRAGZEB ARENA</span></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-on-surface font-semibold"><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule" href="#">Schedule</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="tournament" href="#">Tournament</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="facilities" href="#">Facilities</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="venue" href="#">Venue</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="gallery" href="#">Gallery</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-inverse-surface text-primary-fixed hover:bg-on-surface transition-colors font-label-lg text-label-lg uppercase shadow-[0_12px_32px_-4px_rgba(30,27,24,0.25)]" data-path="register" href="#">REGISTER NOW</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header>
+
+    <!-- Fragzeb Arena Full Main Content -->
+    <main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full -mt-20 overflow-hidden bg-inverse-surface">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-85 scale-105 transition-transform duration-1000 ease-out" data-alt="Cinematic wide-angle view of four elite tactical operatives standing on a desert mountain peak at golden hour, surveying a vast arid battleground valley below. Warm amber sunset glows on sand dunes, rugged military rigs, and distant tactical structures with soft haze and cinematic grain." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcXdocWfoU9it55v3-svlW6ubQo5BA3nFVWhSvJT9Gjaf9sv4tKtmI_FC-yjTd9mt48GCc4P1Day3Nhjct-I9DQ2QFByueW_h4GH5GzKmT2ybWU0r9IETvF0bYRA8lFYYGv0KOV2m51MLy2siqto2fKJS5tgOiAayfyGe0VSvqbs36nmMyErDMV6APoD5vRYNcNxg9cNcBmFrm7M-hXIsoW8HGdL6IqpFRvmyURKOz81PVnFMI5ng');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/70 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-inverse-surface/40"></div>
+<div class="relative z-10 w-full px-margin md:px-gutter-desktop lg:px-margin-desktop pt-44 pb-28 flex flex-col justify-between min-h-[92vh]">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-widest shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          SANCTIONED BATTLE ROYALE CHAMPIONSHIP
+        </span>
+<span class="inline-flex items-center px-space-md py-space-xs rounded-full bg-secondary-container/90 text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">
+          SEASON 2025 • DESERT CIRCUIT
+        </span>
+</div>
+<div class="my-auto py-space-xl max-w-4xl">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="text-primary font-label-md text-label-md uppercase tracking-[0.2em] font-semibold">THE PREMIER WEEKEND SHOWDOWN</span>
+<span class="h-px w-12 bg-primary/40"></span>
+</div>
+<h1 class="font-display-xl text-display-xl text-surface uppercase font-extrabold tracking-tight drop-shadow-md">
+          FRAGZEB <br class="hidden sm:inline"/>
+<span class="text-primary-fixed">ARENA</span>
+</h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/90 max-w-2xl mt-space-md font-medium leading-relaxed">
+          Tactical supremacy meets golden-hour spectacle. One hundred squads converge across three relentless days of high-stakes battle royale warfare in an architectural desert pavilion.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-xl">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded-lg bg-primary-container text-on-primary-fixed hover:bg-primary-fixed font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200 shadow-xl group" href="#register">
+<span>REGISTER YOUR SQUAD</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-lg bg-surface/80 backdrop-blur-md text-on-surface hover:bg-surface font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200 shadow-md" href="#schedule">
+<span>ORDER OF PLAY</span>
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</a>
+</div>
+</div>
+<!-- Telemetry Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md pt-space-lg bg-surface/90 backdrop-blur-xl rounded-xl p-space-lg shadow-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SCHEDULE DATES</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase mt-1">FRI • SAT • SUN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">NOV 14 - 16, 2025</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">PRIZE PURSE</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold uppercase mt-1">$150,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">GUARANTEED POOL</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">OPERATIVE SQUADS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase mt-1">100+ TEAMS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">TRIOS &amp; QUADS MATRIX</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">VENUE LOCATION</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase mt-1">DOME PAVILION</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SEDONA VALLEY ARENA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT EVENT SECTION -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-surface" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 bg-primary rounded-DEFAULT"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">TACTICAL ARCHITECTURE &amp; ARENA COMBAT</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+          WHERE DESERT HORIZONS MEET PROFESSIONAL CALIBER.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          FRAGZEB ARENA redefines open-bracket championship gaming. Set against an expansive desert amphitheater bathed in natural golden hour sunlight, the championship brings together elite tier-one rosters, rising challengers, and tactical combat enthusiasts for a weekend of monumental sports prestige.
+        </p>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">120 Hz</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Zero-latency, LAN tournament rigs deployed across dedicated sound-isolated pods.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">360° DOME</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Custom holographic battleground projection dome synchronizing live circle zones.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-lg pt-space-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<div>
+<div class="font-label-md text-label-md uppercase font-bold text-on-surface">TIER 1 SANCTIONED</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Global Battle Royale Ruleset v4.2</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-3xl">restaurant</span>
+<div>
+<div class="font-label-md text-label-md uppercase font-bold text-on-surface">FULL HOSPITALITY</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Chef-Crafted Nutrition Provided</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high aspect-[4/3] group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Wide high-altitude overhead capture of an expansive open-air esports stadium facility nested inside a desert canyon during sunset. Modern architectural pavilion roofs, giant LED live-bracket screens, watchtowers, and tactical spectator arenas surrounded by golden cliffs and desert foliage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7DAHEca50humA00yJWpMyCB7PsQGgb37zAUGBfOi21GlmwhaZHx1BFXvwjSWd98oYc2thDA4GcZTlCmCPFLWIoCD9skIVCcqrSBQ5Ds8X7N1e-BgGmTbRO_8XY8obwK2zktW5VNoBwUIAc7JErERbY4hhM0mAENYUazEd3Yzyqpskhrgkj3R_MoEx4imLdi_YnZkt84jX7xTOiIls1q3w6wWhlmGQBLycW5NLgSCPi3D2zN9xNmA');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-lg flex items-center justify-between text-surface">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">VENUE DOME ALPHA</span>
+<p class="font-headline-sm text-headline-sm font-semibold">Sedona Valley Tactical Pavilion</p>
+</div>
+<a class="w-12 h-12 rounded-full bg-surface/90 text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-md" href="#venue">
+<span class="material-symbols-outlined">explore</span>
+</a>
+</div>
+</div>
+<!-- Overlapping Stat Badge -->
+<div class="-mt-8 ml-8 sm:ml-12 relative z-20 max-w-xs p-space-md rounded-xl bg-surface-container-lowest text-on-surface shadow-xl flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">trophy</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">CHAMPIONSHIP FORMAT</span>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">3-DAY FINALS</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EVENT SCHEDULE (FRIDAY, SATURDAY, SUNDAY) -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-surface-container-low" id="schedule">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-2.5 h-2.5 bg-primary rounded-DEFAULT"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">TIMETABLE &amp; PROTOCOL</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">ORDER OF PLAY</h2>
+</div>
+<!-- Interactive Day Switcher Tabs -->
+<div class="inline-flex p-1.5 rounded-xl bg-surface-container shadow-inner gap-1" id="schedule-tabs" role="tablist">
+<button class="tab-btn px-space-lg py-space-xs rounded-lg font-label-md text-label-md uppercase font-semibold transition-all duration-200 bg-inverse-surface text-primary-fixed shadow-md" data-day="fri" type="button">
+          FRIDAY • QUALIFIERS
+        </button>
+<button class="tab-btn px-space-lg py-space-xs rounded-lg font-label-md text-label-md uppercase font-semibold transition-all duration-200 text-on-surface-variant hover:text-on-surface" data-day="sat" type="button">
+          SATURDAY • SEMIFINALS
+        </button>
+<button class="tab-btn px-space-lg py-space-xs rounded-lg font-label-md text-label-md uppercase font-semibold transition-all duration-200 text-on-surface-variant hover:text-on-surface" data-day="sun" type="button">
+          SUNDAY • GRAND FINALS
+        </button>
+</div>
+</div>
+<!-- Day 1 Panel: Friday -->
+<div class="schedule-panel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md" id="panel-fri">
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">09:00 - 11:30</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">CHECK-IN</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Squad Arrival &amp; Roster Lock</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Registration confirmation, hardware authentication, credential issuance, and team media lounge portraits.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>MAIN COMMISSARY</span>
+<span class="material-symbols-outlined text-base">badge</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">12:00 - 14:00</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">STAGE PREP</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Hardware Warm-up &amp; Calibration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lobby connection ping tests, custom sensitivity validation, and squad communications check on dedicated tournament servers.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>ARENA WARMUP LAN</span>
+<span class="material-symbols-outlined text-base">tune</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">14:30 - 18:30</span>
+<span class="font-label-sm text-label-sm uppercase text-secondary">QUALIFIERS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Round 1 Survival Heats (80 Squads)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Four concurrent lobbies battling across dynamic custom maps. Top 8 squads per heat advance directly into Saturday semifinals.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>DOME STAGE A &amp; B</span>
+<span class="material-symbols-outlined text-base">military_tech</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-secondary-container font-label-sm text-label-sm uppercase font-bold text-on-secondary-container">19:00 - 21:00</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">SHOWMATCH</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Sunset Creator Exhibition</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All-star celebrity exhibition under golden hour desert lights with live tactical shoutcasting and sponsored prize bounties.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>AMPHITHEATER LIVE</span>
+<span class="material-symbols-outlined text-base">live_tv</span>
+</div>
+</div>
+</div>
+<!-- Day 2 Panel: Saturday -->
+<div class="schedule-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md" id="panel-sat">
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">10:00 - 12:00</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">RECOVERY</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Tactical Strategy &amp; Roster Briefing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">VOD analysis reviews in team private lounges, drop-zone route selections, and health/physio support.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>TEAM LOUNGE SUITES</span>
+<span class="material-symbols-outlined text-base">psychology</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">13:00 - 16:30</span>
+<span class="font-label-sm text-label-sm uppercase text-primary">SEMIFINALS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Semifinal Series 1 &amp; 2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">32 qualified squads cut down to 24 in high-tempo drop matches with accelerated circle shrink times.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>MAIN ARENA DOME</span>
+<span class="material-symbols-outlined text-base">sports_esports</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-primary-container font-label-sm text-label-sm uppercase font-bold text-on-primary-fixed">17:00 - 19:30</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">LAST CHANCE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">The Desert Wildcard Gauntlet</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Elimination bracket survivors clash for the final 4 slots inside Sunday's Grand Championship final 16.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>DOME STAGE C</span>
+<span class="material-symbols-outlined text-base">flag</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-secondary-container font-label-sm text-label-sm uppercase font-bold text-on-secondary-container">20:00 - 22:00</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">SOCIAL</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Community Festival &amp; Night Market</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Outdoor dining courtyards open with DJ sets, sponsor gear pop-ups, meet-and-greets, and 1v1 aim duel arena.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>FESTIVAL PLAZA</span>
+<span class="material-symbols-outlined text-base">celebration</span>
+</div>
+</div>
+</div>
+<!-- Day 3 Panel: Sunday -->
+<div class="schedule-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md" id="panel-sun">
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">12:00 - 13:30</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">OPENING</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Grand Opening &amp; Squad Walk-Ins</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Orchestral overture, holographic arena mapping, team banner parade, and player tunnel ceremonies.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>CENTER ARENA</span>
+<span class="material-symbols-outlined text-base">stadium</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-primary-container font-label-sm text-label-sm uppercase font-bold text-on-primary-fixed">14:00 - 18:30</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface">GRAND FINALS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Top 16 Survival Championship (6 Matches)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The definitive clash. Six back-to-back maps featuring tactical weather shifts, high kill bounties, and championship points calculation.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>BROADCAST STAGE</span>
+<span class="material-symbols-outlined text-base">military_tech</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">19:00 - 20:00</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">CEREMONY</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Trophy Presentation &amp; MVP Crown</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conferral of the Fragzeb Golden Dune Cup, $150K purse distribution, and Tournament MVP rifle honors.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>PODIUM ARENA</span>
+<span class="material-symbols-outlined text-base">workspace_premium</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface text-on-surface shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm uppercase font-bold text-primary">20:30 - LATE</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">AFTERGLOW</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Champions Lounge Afterparty</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sunset dessert reception, open VIP deck, developer panels, and closing pyrotechnics above the canyon.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span>DESERT SKY TERRACE</span>
+<span class="material-symbols-outlined text-base">nights_stay</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TOURNAMENT DETAILS & SCORING -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-surface" id="tournament">
+<div class="max-w-3xl mb-space-xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-2.5 h-2.5 bg-primary rounded-DEFAULT"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">COMPETITION FRAMEWORK</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">TOURNAMENT MECHANICS</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Built on authoritative fairness, strict ping stabilization, and balanced placement incentives designed for aggressive tactical play.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card 1: Format -->
+<div class="p-space-lg rounded-xl bg-surface-container-low text-on-surface shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Squad Composition</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Standard Trios &amp; Quads format. Lobbies capped at 25 squads per instance. Teams may register 1 designated tactical substitute player.</p>
+<div class="space-y-2">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Lobby Density:</span>
+<span class="font-bold text-on-surface">100 Operatives / Map</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Server Mode:</span>
+<span class="font-bold text-on-surface">Direct Dedicated LAN</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Tick Rate:</span>
+<span class="font-bold text-on-surface">128 Hz Tournament Tick</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Scoring Matrix -->
+<div class="p-space-lg rounded-xl bg-surface-container-low text-on-surface shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">leaderboard</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Scoring Matrix</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Hybrid score awarding both aggressive elimination hunting and final circle placement survival.</p>
+<div class="space-y-2">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">1st Place (Winner):</span>
+<span class="font-bold text-primary font-label-md text-label-md">15 PTS</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">2nd – 4th Place:</span>
+<span class="font-bold text-on-surface font-label-md text-label-md">10 PTS / 8 PTS</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Each Elimination (Frag):</span>
+<span class="font-bold text-secondary font-label-md text-label-md">1 PT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Fair-Play & Gear -->
+<div class="p-space-lg rounded-xl bg-surface-container-low text-on-surface shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">security</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Fair Play &amp; Hardware</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Strict hardware segregation. All monitors and base chassis provided by FRAGZEB Arena. Players bring approved input peripherals only.</p>
+<div class="space-y-2">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Anti-Cheat:</span>
+<span class="font-bold text-on-surface">Kernel Level HW Lock</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Peripheral Check:</span>
+<span class="font-bold text-on-surface">Pre-Match Hash Scan</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Referee Ratio:</span>
+<span class="font-bold text-on-surface">1 Arbiter per 4 Pods</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- REGISTRATION SECTION -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-inverse-surface text-surface relative overflow-hidden" id="register">
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/90 to-primary/10"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 bg-primary-fixed rounded-DEFAULT"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed font-bold">OPERATIVE ENROLLMENT OPEN</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-surface font-bold tracking-tight">
+          SECURE YOUR SQUAD'S PLACE IN THE ARENA.
+        </h2>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/90 leading-relaxed max-w-xl">
+          Roster submissions close when 120 sanctioned squads are locked. Every registration includes three full event access badges, player jersey pack, VIP lounge access, and catered nutrition.
+        </p>
+<!-- Roadmap Steps -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-md">
+<div class="p-space-md rounded-lg bg-surface/5 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm text-primary-fixed font-bold">STEP 01</span>
+<div class="font-headline-sm text-[18px] text-surface font-semibold mt-1">Submit Roster</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/70 mt-1">Complete the verified Google Form with player IDs and Discord handles.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface/5 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm text-primary-fixed font-bold">STEP 02</span>
+<div class="font-headline-sm text-[18px] text-surface font-semibold mt-1">ID Validation</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/70 mt-1">Tournament arbiters verify skill rank, competitive records, and age tier.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface/5 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm text-primary-fixed font-bold">STEP 03</span>
+<div class="font-headline-sm text-[18px] text-surface font-semibold mt-1">Seeding Dispatch</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/70 mt-1">Receive official heat assignment, arrival packet, and stadium lounge key.</p>
+</div>
+</div>
+<!-- Google Form CTA Button -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-md">
+<!-- CONFIGURABLE GOOGLE FORM URL -->
+<a class="inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-lg bg-primary-container text-on-primary-fixed hover:bg-primary-fixed font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200 shadow-xl group" href="https://forms.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span>OPEN OFFICIAL GOOGLE FORM</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">open_in_new</span>
+</a>
+<span class="font-body-sm text-body-sm text-inverse-on-surface/60">Takes ~4 minutes to complete. No upfront entry deposit.</span>
+</div>
+</div>
+<!-- Right Card: Eligibility & Rules Snapshot -->
+<div class="lg:col-span-5 p-space-lg rounded-2xl bg-surface/10 backdrop-blur-xl shadow-2xl">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed font-bold">ENTRY ELIGIBILITY</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">TIER 1 OPEN</span>
+</div>
+<ul class="space-y-space-md font-body-md text-body-md text-inverse-on-surface/90">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed shrink-0 mt-0.5">check_circle</span>
+<span>Minimum age 16+ with guardian consent documentation if under 18.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed shrink-0 mt-0.5">check_circle</span>
+<span>Valid photo identification required at Friday physical accreditation.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed shrink-0 mt-0.5">check_circle</span>
+<span>Active clean competitive record without VAC or publisher bans.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed shrink-0 mt-0.5">check_circle</span>
+<span>Squads must designate one Team Captain as singular liaison.</span>
+</li>
+</ul>
+<div class="mt-space-lg p-space-md rounded-lg bg-surface/10 text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-inverse-on-surface/80">REGISTRATION STATUS</span>
+<div class="font-headline-sm text-headline-sm font-bold text-primary-fixed mt-1">78 / 120 SQUADS CONFIRMED</div>
+<div class="w-full bg-surface/20 rounded-full h-2 mt-space-sm overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full w-[65%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOD & FACILITIES SECTION -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-surface" id="facilities">
+<!-- Prominent Food Callout Banner -->
+<div class="w-full mb-space-xl p-space-lg md:p-space-xl rounded-2xl bg-secondary-container text-on-secondary-container shadow-md flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-3xl">restaurant_menu</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold text-secondary">COMPLIMENTARY HOSPITALITY</span>
+<h3 class="font-headline-md text-headline-md font-bold tracking-tight mt-0.5">FOOD WILL BE PROVIDED</h3>
+<p class="font-body-md text-body-md mt-1 max-w-xl">
+            All registered competitors and accredited crew receive complete, all-day culinary hospitality, including high-protein performance meals, hydration stations, and continuous espresso bars.
+          </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-xs shrink-0">
+<span class="inline-flex items-center gap-2 px-space-md py-space-sm rounded-lg bg-surface/80 text-on-surface font-label-md text-label-md uppercase font-semibold">
+<span class="material-symbols-outlined text-base text-primary">lunch_dining</span>
+          3 DAILY MEAL SERVICES
+        </span>
+<span class="inline-flex items-center gap-2 px-space-md py-space-sm rounded-lg bg-surface/80 text-on-surface font-label-md text-label-md uppercase font-semibold">
+<span class="material-symbols-outlined text-base text-primary">local_cafe</span>
+          UNLIMITED HYDRATION
+        </span>
+</div>
+</div>
+<!-- 4 Facility Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined">chair</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Team War Rooms</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Private sound-dampened briefing pods fitted with 4K touch display tactical whiteboards and team review feeds.</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined">wifi</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Dedicated Fiber LAN</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Redundant dual-path 10 Gbps symetrical fiber line guaranteeing single-digit in-game ping and packet isolation.</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Athlete Physio &amp; Recovery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">On-site sports physical therapists for ergonomic wrist care, posture adjustment, and eye fatigue mitigation.</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined">videocam</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold mb-space-xs">Broadcast Studio Suites</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Creator booths equipped with Elgato capture decks, studio ring lights, and isolated gigabit streaming uplinks.</p>
+</div>
+</div>
+</section>
+<!-- VENUE & LOCATION SECTION -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-surface-container-low" id="venue">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center mb-space-xl">
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 bg-primary rounded-DEFAULT"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">MONUMENTAL DESTINATION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">SEDONA VALLEY ARENA PAVILION</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A landmark open-timber and tensile membrane amphitheater designed specifically to merge high-tier digital esports with panoramic desert mountain sunsets.</p>
+</div>
+<div class="lg:col-span-6 flex flex-wrap lg:justify-end gap-space-md">
+<!-- CONFIGURABLE GOOGLE MAPS LINK -->
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md rounded-lg bg-inverse-surface text-primary-fixed hover:bg-on-surface font-label-lg text-label-lg uppercase tracking-wider transition-colors shadow-md" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+<span>GET GOOGLE MAPS DIRECTIONS</span>
+</a>
+</div>
+</div>
+<!-- Big Panoramic Image Card -->
+<div class="w-full rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high relative aspect-[21/9] min-h-[360px] group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Stunning aerial sunset view of an expansive outdoor tournament amphitheater pavilion nestled in an alpine desert valley with thousands of esports spectators, massive outdoor LED broadcast walls, natural wooden glulam beams, festival canopies, and glowing mountains in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAf6Z8cfaInqHNBQLCEOxvDlKFL1jEY9W0brL-81sQOlcLg5K-i67c92KaPCYMkuK38PmwJfjyGBZ-dUYzIy0mXFZ7IwG3Hx-eI_O6SWEoIlpUSCIi3qMpIM_Yl5bbO6UtYA-l6sMKfySKy3S5BVwyEGcwkSGYYBocybxpylUuyGaqTOyYvcPSPlNr63anLLErZrj0n43TWO5gbZkdiKmluCbsVFsJUmCCgyShSu-xAfrAwGyuSpY');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-lg md:p-space-xl flex flex-col md:flex-row md:items-end justify-between gap-space-md text-surface">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">VENUE ADDRESS &amp; ACCESS</span>
+<h3 class="font-headline-md text-headline-md font-bold mt-1">4200 Canyon View Ridge, Sedona, AZ</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80 mt-1">Complimentary competitor shuttle departs every 20 minutes from Sky Harbor Terminal 3 &amp; Flagstaff Airport.</p>
+</div>
+<div class="flex items-center gap-space-md bg-surface/20 backdrop-blur-md px-space-md py-space-sm rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed">local_parking</span>
+<span class="font-label-sm text-label-sm uppercase">2,500 Dedicated Parking Stalls Available</span>
+</div>
+</div>
+</div>
+</section>
+<!-- GALLERY SECTION -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-surface" id="gallery">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-2.5 h-2.5 bg-primary rounded-DEFAULT"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">VISUAL ARCHIVES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">ARENA DISPATCHES</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">SEASON 2024–2025 COMPILATION</span>
+</div>
+<!-- Editorial Masonry Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-md">
+<div class="rounded-xl overflow-hidden shadow-md aspect-[4/5] relative group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Squad operatives standing tall on a grassy ridge in ghillie suits and tactical combat vests looking over a glowing golden hour battlefield valley at dusk. Warm tones, cinematic light rays, and intense military realism." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtIdbvuBkP2gKfxzCNNNDepNLgl1VoEtQlTGWAHmDJq17e3xaLeLCgFl6Xb521NYoqEkb2vLHj2ueTPucnqXxuozBScAtv6FkD0WTTaklfgyiBx7MvtwSSyxlgvJzDPPNxF2uVFdfhl1XiQymzWjxIWr7HBxnSrwSDeD6fMdAFhSDP5IMuWyY37fGwVoB5HT0r6Bu64aQNZcvVS_yT0q8942CRKo4O4SSkHug4LwNlgTcRYXR6eWo');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex items-end">
+<span class="font-label-sm text-label-sm text-surface uppercase">RIDGE DROP ZONE SURVEY • MATCH 04</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="rounded-xl overflow-hidden shadow-md aspect-[4/3] relative group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Dramatic stadium arena view with giant screens glowing, showing live tactical battle royale action, thousands of seated audience members cheering in the warm glowing amphitheater as sunset light streams across the pavilion." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP0UGEiUDDlwtzgWd6NIJISn4ATFXdsOrMExKx-k4M-P6tVYIKQHwi3I1AQJEdXAFvLTHEMAmnnlJ10tsT1cpinrxMxI3K-X2Xr9F4Uoq-hNHRitKPFue-kg4K2YValJnYdta_cZ72Qg0MH_otk2sLD75faXhI3BQklVKzQVIlkt17FQ3Q7XgM21xmhNS4oO0CxE0C4HU_OBXW0MI3VMoYtX566-3yLxHWaqVhYZGNuskMtzJ7CUM');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex items-end">
+<span class="font-label-sm text-label-sm text-surface uppercase">MAIN STAGE CEREMONY SPECTACLE</span>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-md aspect-[4/3] relative group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Wide shot of a desert outpost watchtower with tactical perimeter walls and dome forcefield barrier in the golden sunset haze, troops running in formation on sand dunes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7Ogt9ZuaWPVOqRQPp7Klr7xPlS5sLtPdeiBSOxG5Xo1gT7vq2Xye5zOV7xc1s8eUY3jwgFwWPDAZ9gYLAaiCNlsvq5L1Sq2UdHEB5cDcP4S_udRnvB3v3Oeq6MXUwU6ACbj0Gohm1ljAAzNFo6wL8t8JL5AuYNAySlNWusZvU2TDHoYAdyOMttwPTOYqH1DgbZ3VjCr6RIXFiGLs5MwjghfGORSskZni0lLG42T4ENTI89AV4bsM');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex items-end">
+<span class="font-label-sm text-label-sm text-surface uppercase">OUTPOST ALPHA PERIMETER DEFENSE</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="rounded-xl overflow-hidden shadow-md aspect-[4/5] relative group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Overhead landscape of the massive festival amphitheater packed with fans and gamers, surrounded by scenic mountains, timber pavilion architecture, and sponsor activations during golden hour." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDD4CoLJwPoFetALDdPgur1FgtXZms6H6B5YVVBdcRvKh7GbkhBr40rVUHwllkiGvfmokDfrOQWPnuceVUoyDz_x2yAnoQkI-9MS8lb9XhhFSKdJrlZebL7s-XrBeQaTT6uR74-7eGACnnqRfNPQEd6QwCBek76rTzyjZZ0zJZQ0XfqZwf8PQjL3pWdytOmyuK-vxK3iXLDRx7bB6HC73tC50IhXvnxIHCMo0W_jnzh7sVxERtf0IQ');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex items-end">
+<span class="font-label-sm text-label-sm text-surface uppercase">VALLEY FESTIVAL PLAZA AT SUNSET</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ SECTION -->
+<section class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop py-space-xl bg-surface-container-low" id="faq">
+<div class="max-w-3xl mb-space-xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-2.5 h-2.5 bg-primary rounded-DEFAULT"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">OPERATIONAL QUERIES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">FREQUENTLY ASKED QUESTIONS</h2>
+</div>
+<div class="max-w-4xl space-y-space-sm" id="faq-accordion">
+<!-- FAQ Item 1 -->
+<div class="rounded-xl bg-surface shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-headline-sm text-[18px] font-semibold text-on-surface">Who is eligible to register for FRAGZEB ARENA?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden font-body-md text-body-md text-on-surface-variant">
+          Any competitive squad consisting of 3 to 4 players aged 16+ is eligible to register via the official Google Form. There are no regional locks, but all players must be physically present in Sedona for the Friday physical accreditation and hardware check-in.
+        </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="rounded-xl bg-surface shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-headline-sm text-[18px] font-semibold text-on-surface">What hardware is provided versus Bring-Your-Own-Device (BYOD)?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden font-body-md text-body-md text-on-surface-variant">
+          FRAGZEB Arena provides standardized, sanitized tournament tournament PCs (RTX 4090, 240Hz Fast-IPS monitors, noise-canceling headsets, and anti-static desks). Competitors are required to bring their own approved USB wired mouse, keyboard, and controller, subject to Friday arbiters' hash inspection.
+        </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="rounded-xl bg-surface shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-headline-sm text-[18px] font-semibold text-on-surface">What are the food and catering arrangements for squads?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden font-body-md text-body-md text-on-surface-variant">
+<strong>Food will be provided throughout the entire tournament weekend!</strong> All accredited players and staff receive complimentary lunch and dinner buffets prepared by culinary chefs, alongside 24/7 hydration and snack stations in the private Team War Rooms. Vegetarian, vegan, and allergen-free dietary requirements are fully supported.
+        </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="rounded-xl bg-surface shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-headline-sm text-[18px] font-semibold text-on-surface">Is spectator admission open to friends and family?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden font-body-md text-body-md text-on-surface-variant">
+          Yes. The open-air amphitheater pavilion has tiered general admission seating for 4,000 spectators. Each registered squad receives two complimentary VIP spectator passes for their coaches, managers, or guests.
+        </div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="rounded-xl bg-surface shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-headline-sm text-[18px] font-semibold text-on-surface">How is the $150,000 prize purse distributed?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden font-body-md text-body-md text-on-surface-variant">
+          1st Place takes $75,000 and the Fragzeb Dune Cup; 2nd Place receives $35,000; 3rd Place receives $20,000; 4th–8th receive $3,000 each; and $5,000 is dedicated to individual match MVP elimination bounties.
+        </div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA SECTION -->
+<section class="relative w-full py-space-xl overflow-hidden bg-inverse-surface text-surface">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-40 scale-105" data-alt="Four squad members in tactical military clothing standing on a mountain ridge in silhouette, looking toward a fiery orange golden hour sunset over a wide battleground valley." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWN7UntcQ5iGajwqxK6-nSTt8uqk19qh1hhigoC7jO7qCuXPINoSvZdhuvBIDAn4AnOjrZ2uzlahoMc2nZBQ6DmpKfNQi68uqNB7ap5Xtlva5eK7_xp9zM2VF7pSud2YXWz7dC-hKA_YtC50jb_0RQE9Lw-MyFLsGdlM8KgXiOgPftcQO9Bf8eBjTomjw8mE6dvBYdoP8ikOJgChonQNgfGV6eQPYUuvplrcTp09X6bzqw4C8ptw0');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/80 to-transparent"></div>
+<div class="relative z-10 w-full px-margin md:px-gutter-desktop lg:px-margin-desktop text-center max-w-4xl mx-auto flex flex-col items-center">
+<span class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-primary/20 text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest mb-space-md">
+        REGISTRATION PORTAL OPEN • 120 SQUAD CAP
+      </span>
+<h2 class="font-display-xl text-display-xl uppercase font-black tracking-tight text-surface">
+        ENTER THE <span class="text-primary-fixed">ARENA</span>
+</h2>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/90 max-w-2xl mt-space-sm mb-space-xl leading-relaxed">
+        Three days of uncompromised battle royale prestige. Claim your drop zone, establish your perimeter, and leave your mark on the desert championship.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<!-- CONFIGURABLE GOOGLE FORM URL -->
+<a class="inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-lg bg-primary-container text-on-primary-fixed hover:bg-primary-fixed font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200 shadow-xl group" href="https://forms.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>REGISTER SQUAD VIA GOOGLE FORM</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">open_in_new</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-lg bg-surface/10 hover:bg-surface/20 text-surface font-label-lg text-label-lg uppercase tracking-wider transition-colors shadow-sm" href="#tournament">
+<span>READ RULEBOOK SUMMARY</span>
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</a>
+</div>
+<div class="mt-space-xl flex flex-wrap items-center justify-center gap-space-lg text-inverse-on-surface/60 font-label-sm text-label-sm uppercase tracking-wider">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span> ZERO ENTRY DEPOSIT</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span> FOOD FULLY PROVIDED</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span> 100% SANCTIONED LAN</span>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+    <!-- Fragzeb Arena Full Footer -->
+    <footer class="w-full bg-surface-container-low text-on-surface"><div class="w-full px-margin md:px-gutter-desktop lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-space-xl"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="w-3 h-3 bg-primary rounded-DEFAULT"></span><span class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface">FRAGZEB ARENA</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Desert golden hour luxury esports championship. Elite tactical warfare meets monumental sporting prestige and tactile architectural design.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase">TIER 1 SANCTIONED</span><span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase">SEASON 2025</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider font-semibold">Championship</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="tournament" href="#">Brackets &amp; Hub</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule" href="#">Order of Play</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="facilities" href="#">Player Lounges</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="venue" href="#">Desert Dome Venue</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider font-semibold">Information</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About The Arena</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="gallery" href="#">Event Archives</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">Spectator FAQ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="rules" href="#">Tactical Rulebook</a></div><div class="lg:col-span-3 flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider font-semibold">Tournament Dispatch</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive exclusive access to VIP passes, live roster locks, and venue dispatch briefs.</p><div class="flex flex-col sm:flex-row gap-space-xs"><input class="flex-1 bg-surface-container px-space-md py-space-sm text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant focus:outline-none rounded-lg" placeholder="Enter operative email" type="email"/><button class="px-space-md py-space-sm bg-inverse-surface text-primary-fixed hover:bg-on-surface transition-colors font-label-md text-label-md uppercase rounded-lg">JOIN</button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container rounded-lg p-space-md"><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">© 2025 FRAGZEB ARENA CHAMPIONSHIP. ALL RIGHTS RESERVED.</span></div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms" href="#">TERMS OF COMPETITION</a><a class="font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy" href="#">BROADCAST INTEGRITY</a><a class="font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="press" href="#">MEDIA ACCREDITATION</a></div></div></div></footer>
+  </div>
+
+  <!-- Interactive Script for Fragzeb Arena (Schedule Tabs, FAQ Accordion) -->
+  <script>
+  // Tab Switcher for Schedule
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const panels = {
+      fri: document.getElementById('panel-fri'),
+      sat: document.getElementById('panel-sat'),
+      sun: document.getElementById('panel-sun')
+    };
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetDay = btn.getAttribute('data-day');
+        
+        // Reset all buttons
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-inverse-surface', 'text-primary-fixed', 'shadow-md');
+          b.classList.add('text-on-surface-variant');
+        });
+
+        // Set active button
+        btn.classList.add('bg-inverse-surface', 'text-primary-fixed', 'shadow-md');
+        btn.classList.remove('text-on-surface-variant');
+
+        // Hide all panels, show target
+        Object.keys(panels).forEach(key => {
+          if (panels[key]) {
+            if (key === targetDay) {
+              panels[key].classList.remove('hidden');
+            } else {
+              panels[key].classList.add('hidden');
+            }
+          }
+        });
+      });
+    });
+
+    // FAQ Accordion Toggle
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Close all others
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-toggle .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
+
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+  });
+</script>
+
+  <!-- PUBG Scrollytelling Animation Engine -->
+  <script src="app.js?v=4"></script>
+</body>
+</html>
